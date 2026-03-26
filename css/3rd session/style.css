@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(43, 170, 170);
+}
+#id1{
+color:  red;
+text-align: center;
+}
+p{
+    color: rgb(255, 238, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+div{
+    height: 200px;
+    width: 200px;
+    border: 2px rgb(255, 255, 255) solid;
+    padding: 20px 0 50px 100px ;
+    margin: 100px 0 0 200px;
+}
