@@ -1,0 +1,114 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+
+    body { scroll-behavior: smooth; }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    header nav a:hover { color: gold; }
+
+    .hero {
+      height: 90vh;
+      background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section { padding: 60px 40px; }
+
+    .rooms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: scale(1.05); }
+
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+
+    .card-content { padding: 15px; }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover { background: black; color: gold; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover { transform: scale(1.1); }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    form input, form button {
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media(max-width:768px) {
+      .hero h1 { font-size: 2rem; }
+    }
+  

@@ -3,3 +3,5 @@ let b=3;
 let div=a%b==0;
 console.log(div);
 console.log("ashwani");
+let num=10;
+console.log(num);
