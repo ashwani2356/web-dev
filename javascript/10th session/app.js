@@ -98,12 +98,12 @@
 //     }
 // }
 
-// let a=-9,b=3,num;
-// if(a>b){
+// let a=-9,e=3,num;
+// if(a>e){
 //     num=a;
 // }
 // else{
-//     num=b;
+//     num=e;
 // }
 // if(num>=0){
 //     if(num%2==0){
@@ -140,13 +140,42 @@
 //     console.log(num,"is not three-digit and odd number");
 // }
 
-let a=15,b=-15;
-if(a===b){
-    console.log("both numbers are equal")
-}
-   else{
-    console.log("both numbers aren't equal");
+// let d=15,e=-15;
+// if(d===e){
+//     console.log("both numbers are equal")
+// }
+//    else{
+//     console.log("both numbers aren't equal");
     
-   }
+//    }
+// let num=0;
+// if(num>0){
+//     console.log("+ve");
+    
+// }
+// else if(num<0){
+//     console.log("-ve");
+// }
+// else{
+//     console.log("zero");
 
- 
+// }
+//  let a=10,b=12,c=15;
+//  if(a>b && a>c){
+//     console.log("a is max");
+    
+//  }
+//  else if(b>a && b>c){
+//     console.log("b is max");
+    
+//  }
+//  else{
+//     console.log("c is max");
+    
+//  }
+
+let num=-11;
+
+let ans=(num>=0)?(num>0)? "+ve number": "zero": "negative";
+console.log(ans);
+
