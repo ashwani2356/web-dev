@@ -6,15 +6,18 @@
     <title>Document</title>
     <style>
         .container{
-            border: 1px solid black;
-            background-color: bisque;
+            /* border: 1px solid black;
+            background-color: bisque; */
             display: flex;
             flex-direction: row;
             width: 400px;
+            /* background-color: rgb(250, 249, 249); */
+        /* margin: 0;
+        padding: 0; */
         }
         #boxleft{
-            background-color: rgb(0, 255, 208);
-            border: 1px solid blue;
+            background-color: rgb(255, 0, 102);
+            border: 1px solid rgb(255, 255, 255);
             width: 47%;
             margin: 3px;
             padding: 2px;
@@ -22,14 +25,14 @@
             flex-direction:column ;
         }
           #boxright{
-            background-color: yellow;
-            border: 1px solid brown;
+            
+            /* border: 1px solid brown; */
             width: 50%;
             margin: 3px;
             padding: 2px;
         }
         p{
-            border: 1px solid red;
+            border: 1px solid rgb(0, 60, 255);
         }
         img{
             width: 170px;
@@ -40,16 +43,19 @@
             }
         }
         
+       
+
+        
     </style>
 </head>
-<body>
+<body style="background-color: black;">
     <div class="container">
         <div id="boxleft">
             <p>Text1</p>
             <p>Text2</p>
         </div>
         <div id="boxright">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf82XJ9aKvTDOBTbESKyf6u4Qyce739ye3vQ&s" alt="">
+            <img style="border:5px solid rgb(255, 221, 0);border-radius: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf82XJ9aKvTDOBTbESKyf6u4Qyce739ye3vQ&s" alt="">
         </div>
     </div>
 </body>
