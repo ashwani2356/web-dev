@@ -37,6 +37,34 @@ console.log(ans1);
     }
  }
   table(2)
+  function pattern(n) {
+    for (let i = 1; i <= n; i++) {
+
+        // spaces print karne ke liye
+        for (let j = 1; j <= n - i; j++) {
+            process.stdout.write("  ");
+        }
+
+        // stars print karne ke liye
+        for (let k = 1; k <= (2 * i - 1); k++) {
+            process.stdout.write("* ");
+        }
+
+        console.log();
+    }
+}
+
+pattern(3);
 
 
+function greet(){ 
+    return 'Hello'; }
+ console.log(greet());
 
+ const multiply = function(x, y) { return x * y; }; console.log(multiply(4, 5));
+
+ function isEven(num) {
+    return num % 2 === 0;
+}
+let check =isEven(11)
+console.log(check);
