@@ -1,3 +1,4 @@
+// return even odd
 function evenOdd(){
     let num=10;
     if(num%2==0){
@@ -12,8 +13,7 @@ console.log(ans);
 
 console.log("\n");
 
-// // returns subtraction 
-
+ // returns subtraction 
 function subtraction(){
     let a=10,b=10
     let sub=a-b;
@@ -23,7 +23,6 @@ let ans1=subtraction();
 console.log(ans1);
 
 //  //prints multiplication of 2 numbers
-
  function multiplication(){
     let a=12,b=2;
     let multi=a*b;
@@ -33,8 +32,7 @@ console.log(ans1);
 
  multiplication();
 
-//  // prints table
-
+  // prints table
  function table(t){
     for(let i=1;i<=10;i++){
         console.log(t,"*",i,"=",t*i);
@@ -43,8 +41,8 @@ console.log(ans1);
  }
   table(2)
 
-   console.log("\n");
-//
+   
+// prints pattern
   function pattern(n) {
     for (let i = 1; i <= n; i++) {
 
@@ -61,18 +59,15 @@ console.log(ans1);
         console.log();
     }
 }
-
 pattern(3);
 
- console.log("\n");
-//
+ 
+// prints greet message
 function greet(){ 
     return 'Hello'; }
  console.log(greet());
 
- console.log("\n");
- 
-
+// chech even odd using function expression
  const multiply = function(x, y) { return x * y; }; console.log(multiply(4, 5));
 
  function isEven(num) {
