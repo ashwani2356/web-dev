@@ -1,33 +1,44 @@
-
-//  let arr = [];
-// let sum=0,average;
-// for (let i = 0; i < 2; i++) {
-//    arr[i]=Number(prompt("enter your number: "));  
-// sum+=arr[i];
-// average=sum/2;
-// }
-// for(let i=arr.length-1;i>=0;i--){
-//     console.log(arr[i]);
-// }
-//  let arr=[1,2,3,4,5];
-//  let i=0;
-//  while(i<arr.length){
-//     console.log(arr[i])
-//     i++;
-//  }
+// constructor
+// let arr=new Array();
  
- let arr=[[1,2,3],[4,5,6],[7,8,9]];
- for(let i=0;i<arr.length;i++){
-   for(let j=0;j<arr.length;j++){
-      process.stdout.write(arr[i][j]+" ");
-   }
-   console.log();
- }
+// console.log("arr:",arr);
+// console.log(typeof(arr));
 
-
-
-
-
+// literals
+// let arr=[1,2,3,4,5];
+// console.log("arr:",arr);
+// console.log(arr[0]);
+// arr[0]='rahul';
+// console.log(arr[0]);
+// console.log("arr:",arr);
+// console.log(arr.length);
+// for(let i=0;i<arr.length;i++){
+//   console.log(arr[i]);  
+// }
+// let i=0
+// while(i<arr.length){
+//   console.log(arr[i]);
+  
+//   i++;
+// }
+// taking user input
+// let size=5;
+// let arr=[];
+// for(let i=0;i<size;i++){
+//    arr[i] = Number(prompt(`Enter number ${i + 1}: `));
+// }
+// for (let i = 0; i < size; i++) {
+//   console.log(arr[i]);
+// }
+// 2d array
+let arr=[[1,2,3,],[4,5,6,]];
+for(let i=0;i<arr.length;i++){
+  for(let j=0;j<arr[i].length;j++){
+    process.stdout.write(arr[i][j]+" ");
+  }
+  console.log();
+  
+}
 
 
  
