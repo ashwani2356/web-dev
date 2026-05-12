@@ -22,23 +22,25 @@
 //   i++;
 // }
 // taking user input
-// let size=5;
-// let arr=[];
-// for(let i=0;i<size;i++){
-//    arr[i] = Number(prompt(`Enter number ${i + 1}: `));
-// }
-// for (let i = 0; i < size; i++) {
-//   console.log(arr[i]);
-// }
-// 2d array
-let arr=[[1,2,3,],[4,5,6,]];
-for(let i=0;i<arr.length;i++){
-  for(let j=0;j<arr[i].length;j++){
-    process.stdout.write(arr[i][j]+" ");
-  }
-  console.log();
-  
+function array(){let size;
+size=Number(prompt("enter size of array"));
+let arr=[];
+for(let i=0;i<size;i++){
+   arr[i] = Number(prompt(`Enter number ${i + 1}: `));
 }
+for (let i = 0; i < size; i++) {
+  console.log(arr[i]);
+}}
+array();
+// 2d array
+// let arr=[[1,2,3,],[4,5,6,]];
+// for(let i=0;i<arr.length;i++){
+//   for(let j=0;j<arr[i].length;j++){
+//     process.stdout.write(arr[i][j]+" ");
+//   }
+//   console.log();
+  
+// }
 
 
  
