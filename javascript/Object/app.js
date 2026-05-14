@@ -1,3 +1,4 @@
+// cre
 // let student={name1:"Rahul"
 //     ,age: 21,
 //     id: 101,
@@ -106,24 +107,6 @@
 // obj.id=101
 // console.log(obj);
 
-// creating using constructor
-// function Student(StudentName,StudentId){
-//     this.name=StudentName;
-//     this.id=StudentId;
-//     this.display=function(){
-//         console.log(`Name=${this.name} id=${this.id}`);
-//     }
-// }
-// let s1= new Student("Ravi",101);
-// console.log(s1);
-// console.log("Type=",typeof(s1));
-// s1.display();
-
-//destructing String 
-// let obj={name: "Anuj raj",id:101};
-// console.log(obj);
-// let{name,id}=obj;
-// console.log(`name=${name} id=${id}`);
 
 // accesing keys
 // let obj={name: "Anuj raj",id:101};
@@ -144,6 +127,43 @@
 //     console.log(`key=${key} id=${value}`);
     
 // }
+
+// creating object using new object()
+// let car=new Object();
+// car.brand="Tesla";
+// car.model="SportsEdition";
+// car.year=2026;
+// console.log(car.brand);
+// console.log(car.model);
+// console.log(car["year"]);
+
+// creating object using constructor function
+// function Student(){
+//     this.display=function(StudentName,StudentId){
+//     this.name=StudentName;
+//     this.id=StudentId;
+//         console.log(`Name=${this.name} id=${this.id}`);
+        
+//     }
+// }
+// // let s1=new Student("Ravi",101);
+// // // console.log(s1);
+// // s1.display();
+
+// // let s2=new Student("Rahul",102);
+// // // console.log(s2);
+// // s2.display();
+// let s3=new Student();
+// s3.display("Ashwani kumar",103);
+
+// destructing String 
+let obj={name: "Anuj raj",id:101};
+console.log(obj);
+let{name,id}=obj;
+console.log(`name=${name} id=${id}`);
+
+
+
 
 
 
