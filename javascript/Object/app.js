@@ -157,15 +157,36 @@
 // s3.display("Ashwani kumar",103);
 
 // destructing String 
-let obj={name: "Anuj raj",id:101};
-console.log(obj);
-let{name,id}=obj;
-console.log(`name=${name} id=${id}`);
+// let obj={name: "Anuj raj",id:101};
+// console.log(obj);
+// let{name,id}=obj;
+// console.log(`name=${name} id=${id}`);
+ 
+//accesing keys
+// let obj={name:"Ashwani kumar",id:101};
+// // console.log(obj);
+// let keys=Object.keys(obj);
+// // console.log(keys);
+// for(key of keys){
+//     console.log(key,": ",obj[key]);
+// }
+ //destructing array
+// let arr=[1,2,3,4,5];
+// let [a,b,c,d]=arr;
+// console.log(`a=${a} b=${b} c=${c} d=${d}`);
+ 
+//destructing object
+// let obj={name:"Rahul raj",id:101};
+// // console.log(obj);
+// let{name,id}=obj
+// console.log(`name:${name} id:${id}`);
 
-
-
-
-
+//accesing keys
+ let obj={name:"Rahul raj",id:101};
+let keys=Object.keys(obj);
+for(key of keys){
+      console.log(obj[key]);
+}
 
 
 
