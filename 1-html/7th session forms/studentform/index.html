@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #00b7ff, #0072fe);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color:aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 5px;
+            width: 430px;
+            box-shadow: 5px 5px 20px rgb(17, 17, 17);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            text-align: left;
+            padding: 2px;
+            color: #444;
+            width: 20%;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #4facfe;
+            box-shadow: 0px 0px 5px rgba(79, 172, 254, 0.5);
+        }
+
+        .gender-box {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .gender-box input {
+            width: auto;
+        }
+
+        .btn-box {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .btn-box input {
+            width: 48%;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .submit-btn {
+            background-color: #28a745;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+
+        .reset-btn {
+            background-color: #dc3545;
+        }
+
+        .reset-btn:hover {
+            background-color: #c82333;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 30px;
+                height: auto;
+            }
+
+            form {
+                width: 100%;
+                padding: 20px;
+            }
+
+            table,
+            tr,
+            th,
+            td {
+                display: block;
+                width: 100%;
+            }
+
+            th {
+                padding-bottom: 5px;
+            }
+
+            td {
+                padding-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .btn-box {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .btn-box input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="../5th session multi & struct/index.html" method="post" target="_blank">
+
+        <h1>Student Form</h1>
+
+        <table>
+
+            <tr>
+                <th><label for="employeeid">Employee ID:</label></th>
+                <td>
+                    <input id="employeeid" type="text" placeholder="Enter employee ID" required>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="name">Name:</label></th>
+                <td>
+                    <input id="name" type="text" placeholder="Enter full name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="email">Email:</label></th>
+                <td>
+                    <input id="email" type="email" placeholder="Enter email address" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="password">Password:</label></th>
+                <td>
+                    <input id="password" type="password" placeholder="Enter password" required>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="address">Address:</label></th>
+                <td>
+                    <textarea id="address" rows="3" placeholder="Enter your address" required></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <div class="gender-box">
+
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="others" name="gender" value="Others">
+                        <label for="others">Others</label>
+
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="city">City:</label></th>
+                <td>
+                    <select name="city" id="city" required>
+
+                        <option value="">Select city</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="muzaffarpur">muzaffarpur</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="btn-box">
+
+            <input type="submit" value="Submit" class="submit-btn">
+
+            <input type="reset" value="Reset" class="reset-btn">
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>

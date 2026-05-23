@@ -1,0 +1,162 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #131921;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: orange;
+}
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Search */
+
+.search-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+/* Categories */
+
+.categories h2 {
+    margin-bottom: 15px;
+}
+
+.categories ul {
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #131921;
+    color: white;
+}
+
+table th,
+table td {
+    border: 1px solid gray;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Form */
+
+.form-box {
+    width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: orange;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-box a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #131921;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .search-box input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
