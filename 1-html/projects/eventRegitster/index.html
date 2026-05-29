@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <h1>Tech Conference 2026</h1>
+
+    <!-- Anchor Link -->
+    <a href="#schedule">Go to Event Schedule</a>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <h2>Register Now</h2>
+
+    <form>
+
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <br>
+
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <br>
+
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <br><br>
+
+        <!-- Event Date -->
+        <label for="date">Event Date:</label>
+        <br>
+
+        <input type="date" id="date" required>
+
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <p>Select Session:</p>
+
+        <input type="radio" id="morning" name="session">
+
+        <label for="morning">Morning Session</label>
+
+        <br>
+
+        <input type="radio" id="evening" name="session">
+        <label for="evening">Evening Session
+        </label>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="lunch">
+
+        <label for="lunch">
+            Lunch Included
+        </label>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <hr>
+
+    <!-- Schedule Section -->
+    <h2 id="schedule">Event Schedule</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Time</th>
+            <th>Activity</th>
+        </tr>
+
+        <tr>
+            <td>10:00 AM</td>
+            <td>Opening Ceremony</td>
+        </tr>
+
+        <tr>
+            <td>11:00 AM</td>
+            <td>Web Development Workshop</td>
+        </tr>
+
+        <tr>
+            <td>1:00 PM</td>
+            <td>Lunch Break</td>
+        </tr>
+
+        <tr>
+            <td>3:00 PM</td>
+            <td>Networking Session</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+
+/* ================= GLOBAL STYLES ================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    margin-bottom: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+/* ================= MARQUEE ================= */
+
+marquee{
+    background-color: #dc2626;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* ================= MAIN LAYOUT ================= */
+
+main{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* ================= ARTICLES SECTION ================= */
+
+section{
+    flex: 3;
+}
+
+article{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+article:hover{
+    transform: translateY(-5px);
+}
+
+article h3{
+    margin: 15px 0;
+    font-size: 28px;
+}
+
+article p{
+    margin: 15px 0;
+}
+
+article a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+article a:hover{
+    background-color: #1d4ed8;
+}
+
+/* ================= SIDEBAR ================= */
+
+aside{
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+aside h2{
+    margin-bottom: 15px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li{
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+aside ul li:hover{
+    background-color: #f1f5f9;
+    padding-left: 18px;
+}
+
+/* ================= CONTACT FORM ================= */
+
+form{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 500px;
+    margin: 30px auto;
+}
+
+form label{
+    font-weight: bold;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button{
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover{
+    background-color: #1e40af;
+        transform: translateY(-5px);
+}
+
+/* ================= AUTHOR PAGE ================= */
+
+.author-box{
+    background-color:gold ;
+    color:black;
+    width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.author-box img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.author-box h2{
+    margin-bottom: 15px;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer a{
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media(max-width: 900px){
+
+    main{
+        flex-direction: column;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    .author-box{
+        width: 90%;
+    }
+
+}
+
