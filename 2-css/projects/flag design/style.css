@@ -1,0 +1,73 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Heading */
+h1{
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* Flag Container */
+.flag-container{
+    margin-bottom: 50px;
+}
+
+/* Common Flag Style */
+.india-flag,
+.france-flag{
+    width: 300px;
+    height: 180px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ================= INDIA FLAG ================= */
+
+.india-flag{
+    position: relative;
+
+    background: linear-gradient(
+        to bottom,
+        #ff9933 33.33%,
+        white 33.33% 66.66%,
+        #138808 66.66%
+    );
+}
+
+/* Ashoka Chakra */
+.chakra{
+    width: 60px;
+    height: 60px;
+
+    border: 4px solid navy;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* ================= FRANCE FLAG ================= */
+
+.france-flag{
+    background: linear-gradient(
+        to right,
+        #0055A4 33.33%,
+        white 33.33% 66.66%,
+        #EF4135 66.66%
+    );
+}
