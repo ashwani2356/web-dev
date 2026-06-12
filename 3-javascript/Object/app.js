@@ -182,11 +182,16 @@
 // console.log(`name:${name} id:${id}`);
 
 //accesing keys
- let obj={name:"Rahul raj",id:101};
-let keys=Object.keys(obj);
-for(key of keys){
-      console.log(obj[key]);
+//  
+let obj={
+      name: "Ashwani kumar",
+      age: 21,
+      id: 101,
 }
+let aa="name";
+obj[aa]
+console.log()
+
 
 
 
