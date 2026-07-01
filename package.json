@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "express": "^5.2.1"
-  }
+    "cat-me": "^1.0.3",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  },
+  "name": "web-dev",
+  "version": "1.0.0",
+  "description": "🌐 Web Development Daily Practice",
+  "main": "script.js",
+  "scripts": {
+    "dev": "nodemon script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwani2356/web-dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ashwani2356/web-dev/issues"
+  },
+  "homepage": "https://github.com/ashwani2356/web-dev#readme"
 }
